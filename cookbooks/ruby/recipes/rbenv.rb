@@ -3,7 +3,7 @@
 # Recipe:: rbenv
 #
 
-DEFAULT_RUBY_VERSION = "1.8.7-p352"
+DEFAULT_RUBY_VERSION = "1.9.3-p0"
 
 script "installing rbenv to ~/Developer" do
   interpreter "bash"
@@ -57,7 +57,7 @@ script "installing basic gems" do
   code <<-EOS
     source ~/.cinderella.profile
     gem install bundler heroku cinderella
-    gem install rake -v=0.8.7
+    gem install rake
     rbenv rehash
   EOS
 end
